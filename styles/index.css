@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@200;300;500&display=swap');
+
+*{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+header{
+
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 28px;
+
+    background-color:#244DD1 ;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+/* настроил размер лого   */
+header img{
+    
+    border-radius: 20px;
+    height: 60px;
+}
+
+/* раскидал кнопки на нормальное расстояние  */
+nav{
+    display: flex;
+    gap: 4vw;
+}
+/* стилизовал кнопки */
+nav a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+  }
+  
+nav a:hover::after {
+    width: 100%;
+  }
+/* блок с текстом разделён на две части  */
+    /* 1) это текст с кнопками  */
+    /* 2) это картинка  */
+.main-ifno{
+
+    display: flex;
+    justify-content: space-between;
+
+
+   max-width: 1000px;
+   margin: 0 auto;
+
+
+    border-radius: 20px;
+
+
+    background-color: #244DD1;
+    margin-top: 50px;
+   
+}
+/* настроил размер картинки в блоке   */
+.info-img img{
+    position: relative;
+    right: 30px;
+    height: 600px;
+    display: flex;
+}
+.info-text{
+    color: #fff;
+    padding: 10px 50px;
+}
+/* центрировал заголовок и задал размеры -  1 часть блока */
+.info-text h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+/* настроил текст внутри блока - 1 часть блока   */
+.info-text p{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* стронг - потому что он несёт смысловую нагрузку(семантика)  */
+.info-text strong{
+    font-size: 20px;
+}
+/* список кнопок */
+    /* убрал жирные точки у каждого элемента списка */
+
+.main-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+/* настроил список в столбик по 3 колонки*/
+.main-list ul{
+    
+    margin-top: 30px;
+   /* задаем количество столбцов */
+   
+
+    width: 90%;
+}
+/* это элемент списка */
+.main-list li{
+    
+    
+    display: inline-block;
+    margin-right: 10px;
+
+
+    
+    margin-bottom: 30px;
+    font-weight: 600;
+   
+}
+
+/* а это каждая кнопочка элемента списка */
+.main-list li a {
+
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    color: #244DD1;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease;
+}
+.main-list li a:hover {
+    
+    color: #fff;
+    background-color: transparent;
+
+}
+
+/* это форма где будет предложение о сборке пк, чекай html*/
+.dop-info{
+
+    display: flex;
+    justify-content: space-between;
+
+
+   max-width: 1000px;
+   margin: 0 auto;
+
+
+    border-radius: 20px;
+
+    margin-top: 50px;
+    background: -webkit-linear-gradient(90deg, rgb(36, 77, 209) 1%, rgb(210, 104, 204));
+    background: -moz-linear-gradient(90deg, rgb(36, 77, 209) 1%, rgb(210, 104, 204));
+    background: linear-gradient(90deg, rgb(36, 77, 209) 1%, rgb(210, 104, 204));
+}
+.dop-text{
+    color: #fff;
+    padding: 10px 50px;
+
+}
+.dop-text h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+.dop-text p{
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+.dop-text strong{
+    font-size: 20px;
+
+}
+
+.dop-btn a{
+    text-align: center;
+    margin-top: 20px;
+    background-color: white;
+    text-decoration: none;
+    color: #244DD1;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+    width: 300px;
+    
+    transition: background-color 0.3s ease;
+}
+
+.dop-btn a:hover {
+
+    color: #fff;
+    background-color: transparent;
+
+}
+
+
+.dop-img img{
+    position: relative;
+    right: 30px;
+    height: 600px;
+    
+
+}
+
+.foot-ifno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+   max-width: 1000px;
+   margin: 0 auto;
+
+
+    border-radius: 20px;
+
+
+    background-color: #244DD1;
+    margin-top: 50px;
+   
+    margin-bottom: 60px;
+}
+
+.foot-ifno h1{
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.foot-row{
+
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    
+}
+.foot-item{
+    margin-left: 40px;
+    width: 200px;
+}
+.foot-row .item__h4{
+    flex-basis: 30%;
+    
+    
+}
+.foot-row .item__text{
+    margin-top: 15px;
+}
+
+footer{
+    width: 100%;
+    padding: 10px 50px;
+    font-size: 28px;
+
+    background-color:#244DD1 ;
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #fff;
+}
+
+footer a{
+    color: #fff;
+}
